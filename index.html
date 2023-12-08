@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!-- all.main -->
+    <link rel="stylesheet" href="css/all.min.css">
+                <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+                <!--main.css  -->
+    <link rel="stylesheet" href="css/main.css">
+      <!-- Link Swiper's CSS -->
+   <!-- Link Swiper's CSS -->
+   <link
+   rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+   <!-- Link Swiper's CSS -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:ital,wght@0,200;0,300;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
+ <!-- website icon -->
+<link rel="shortcut icon" href="image/microphone.png" type="x-icone">
+
+<title>TilTalk</title>
+<!-- fontaswom -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+ integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<!-- fontaswom -->   
+</head>
+<body>
+    <!-- start header -->
+    <header>
+    <div class="container">
+        <div class="logo">
+            <img src="image/logo1.png" alt="">
+        </div>
+        <nav>
+            <i class="fas fa-bars toggle"></i>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="./Contact us.html"target="_blank">Contact us</a></li>
+                <li><a href="#">login</a></li>
+
+            </ul>
+        
+        </nav>
+    </div>
+</header>
+<!-- end header -->
+<!-- start landing -->
+<div class="landing" id="home">
+            <div class="content">
+                <div class="text">
+            <span>TikTalk </span><h1><br> Arabic Speech Engine </h1>
+            <p>we can help you to communicate with each other <br> in simple steps easy fast precise<a href="#features" class="learn">learn more</a></p>
+            <button class="sign">sign up</button>
+        </div>
+    </div>
+  <div class="icon">
+    <img src="image/icon background.png" alt="">
+</div>
+    <a href="#content" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+    </a>
+</div>
+<!-- end landing landing -->
+<!--start content-->
+<div class="content1" id="content">
+  <div class="main-heading">
+    <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;content&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;content&nbsp;</span>
+    </button>
+ </div>
+  <div class="container">
+    
+    <div class="loader">
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+      <span class="stroke"></span>
+  
+  </div>
+  select voice <select name="" id="voicelist" class="select" ></select>   
+  <div class="options">
+    <div class="Language">
+      select Language 
+      <select name="input-language" id="language"></select>
+    </div>
+  </div>
+
+      <div class="form-group">
+        <div class="img1">
+          <img src="image/casual-life-3d-side-view-of-man-sitting-in-front-of-laptop-and-talking-on-phone.png" alt="">
+        </div>
+        <div class="img2">
+          <img src="image/casual-life-3d-excited-young-woman-sitting-at-desk-and-looking-at-laptop-screen.png" alt="">
+        </div>
+        
+      <textarea name="" id="textarea" rows="10" cols="70" class="result"></textarea>
+      <div class="btns">
+        <!-- record -->
+      <button id="start-btn" class="btn record ">
+        <i class="fa-solid fa-microphone fa-2x"></i>
+              
+      </button>
+      <!-- stop -->
+      <button id="stop-btn" class="btn" >
+        <i class="fa-solid fa-microphone-slash fa-2x"></i>
+      </button>
+     
+      <!-- speek-->
+      <button id="btnspeak">
+        <i class="fa-solid fa-volume-high fa-2x"></i>
+      </button>
+      
+       <!-- clear -->
+    
+      </div>
+      <div class="btn2">
+        <button id="clear-btn" class="clear"  onclick="clearText();">
+         <i class="fa-solid fa-trash fa-2x"></i>
+       </button>
+
+       <!-- save -->
+         <button  onclick="saveFunction()" class="savebtn">
+           <i class="fa-solid fa-download fa-2x"></i>
+         </button>
+         <!-- copy -->
+         <button  onclick="copy()" id="copybtn" class="btn">
+           <i class="fa-solid fa-copy fa-2x"></i>
+         </button>
+       </div>
+      </div>
+        
+    
+</div>
+  </div>
+<!--end content-->
+
+ <!-- start Features -->
+ <div class="features" id="features">
+
+  <div class="main-heading">
+    <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;features&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;features&nbsp;</span>
+    </button>
+ </div>
+
+    <div class="container">
+      <div class="feat">
+        <img src="image/reading-paper.jpg" alt="">
+        <h3>Get more with text to speech</h3>
+        <p>Boost your understanding and focus. Remember more of what you read.</p>
+      </div>
+      <div class="feat">
+        <img src="image/save-time.jpg" alt="">
+        <h3>Maximize your time</h3>
+        <p>Breeze through your content 2-3x faster than it takes to read it.</p>
+      </div>
+      <div class="feat">
+          <img src="image/dog-walker.jpg" alt="">
+        <h3>Do more at once</h3>
+        <p>Take your reading wherever you go – to the gym, the park, or the couch</p>
+      </div>
+    </div>
+  </div>
+ <!-- end Features -->
+
+<!-- start articles -->
+<div class="articles1"> <div class="main-heading">
+  <button data-text="Awesome" class="button">
+      <span class="actual-text">&nbsp;Languages&nbsp;</span>
+      <span class="hover-text" aria-hidden="true">&nbsp;Languages&nbsp;</span>
+  </button>
+</div>
+<div class="articles">
+ 
+
+  <div class="swiper mySwiper container1">
+    <div class="swiper-wrapper content">
+
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/egypt.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">Arabic </span>
+          <span class="profession">Egypt , Saudi Arabia,Algeria, Iraq and Morocco</span>
+        </div>
+        <div class="button">
+          <a href="https://en.wikipedia.org/wiki/Arabic" target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/england.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">English </span>
+          <span class="profession">United Kingdom, United States, Australia and Ireland </span>
+        </div>
+        <div class="button">
+          <a href="https://en.wikipedia.org/wiki/English_Wikipedia" target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+    
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/china.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">china </span>
+          <span class="profession">Hong Kong , Macau , Malaysia , Singapore , Taiwan</span>
+        </div>
+        <div class="button">
+          <a href="#" target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/france.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">French </span>
+          <span class="profession">Canada, Belgium, Switzerland and Haiti</span>
+        </div>
+        <div class="button">
+          <a href="#" target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/germany.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">German</span>
+          <span class="profession">Germany, Austria and Luxembourg</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/greece.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">Greece</span>
+          <span class="profession">Greece and Cyprus</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/india.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">india</span>
+          <span class="profession">India, Nepal and Fiji</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/italy.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">Italy</span>
+          <span class="profession">Italy, Switzerland and San Marino</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/netherlands.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">Netherlands</span>
+          <span class="profession">Netherlands, Belgium, Suriname, Aruba, Curaçao, Sint Maarten</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/portugal.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">Portugal</span>
+          <span class="profession">Portugal and Brazil Angola, Cape Verde and Mozambique</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/russia.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">russia</span>
+          <span class="profession">Russia, Ukraine and the CIS.</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+
+      <div class="swiper-slide card">
+
+        <div class="card-content">
+          <div class="image">
+            <img src="flag project/ICON/spain.png" alt="">
+          </div>
+        <div class="name-profession">
+          <span class="name">spain</span>
+          <span class="profession">Argentina, Bolivia, Chile, Colombia, Costa Rica, Ecuador, Honduras, Mexico,</span>
+        </div>
+        <div class="button">
+          <a href="#"target="_blank">read more</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+ 
+</div>
+</div>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     slidesPerGroup: 3,
+     loop: true,
+     loopFillGroupWithBlank: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
+<!-- end articles-->
+<!-- start portfolio -->
+<div class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="main-heading">
+      <button data-text="Awesome" class="button">
+          <span class="actual-text">&nbsp;AudioBooks&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">&nbsp;AudioBooks&nbsp;</span>
+      </button>
+    </div>
+  </div>
+  
+      <div class="img-container">
+          <div class="box">
+             <a href="https://www.amazon.com/s?k=Extreme+Ownership&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank"> <img src="image/movie/extreme ownership.jpeg" alt="" ></a>
+              <div class="text">
+              <h4>Extreme Ownership</h4>
+              <p>watch now</p>
+          </div>
+          </div>
+          <div class="box">
+             <a href="https://www.amazon.com/s?k=How+To+Win+Friends+And+Influence+People&i=stripbooks-intl-ship&crid=2H88A1T1GZWP5&sprefix=how+to+win+friends+and+influence+people%2Cstripbooks-intl-ship%2C486&ref=nb_sb_noss_1" target="_blank"><img src="image/movie/How To Win Friends And Influence People.jpg" alt=""></a> 
+              <div class="text">
+                  <h4>How To Win Friends <br> And Influence People</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+             <a href="https://www.amazon.com/Im-Glad-My-Mom-Died/dp/1982185821"target="_blank"><img src="image/movie/Im-glad-my-mom-died-5.jpeg" alt=""></a> 
+              <div class="text">
+                  <h4>Im glad my mom died 5</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+              <a href="https://www.amazon.com/s?k=The+7+Habits+of+Highly+Effective+People&i=stripbooks-intl-ship&crid=1L2L08YI1KXJH&sprefix=think+and+grow+rich%2Cstripbooks-intl-ship%2C817&ref=nb_sb_noss_2"target="_blank"><img src="image/movie/The 7 Habits of Highly Effective People.jpg" alt=""></a>
+              <div class="text">
+                  <h4>The 7 Habits of Highly <br> Effective People</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+            <a href="https://www.amazon.com/s?k=The+Alchemist&i=stripbooks-intl-ship&ref=nb_sb_noss" target="_blank"><img src="image/movie/The Alchemist.jpg" alt=""></a>
+              <div class="text">
+                  <h4>The Alchemist</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+             <a href="https://www.amazon.com/s?k=The+Hobbit&i=stripbooks-intl-ship&crid=32PMHL025XBYJ&sprefix=the+hobbit%2Cstripbooks-intl-ship%2C623&ref=nb_sb_noss_1" target="_blank"><img src="image/movie/The Hobbit.jpg" alt=""></a> 
+              <div class="text">
+                  <h4>The Hobbit</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+            <a href="https://www.amazon.com/s?k=The+Silent+Patient&i=stripbooks-intl-ship&crid=2ZGF9SUGGKBBJ&sprefix=the+silent+patient%2Cstripbooks-intl-ship%2C490&ref=nb_sb_noss_1" target="_blank"><img src="image/movie/The Silent Patient.jpg" alt=""></a>
+              <div class="text">
+                  <h4>The Silent Patient</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+          <div class="box">
+              <a href="https://www.amazon.com/s?k=Think+and+Grow+Rich&i=stripbooks-intl-ship&crid=SZ5WJXTA77PT&sprefix=think+and+grow+rich%2Cstripbooks-intl-ship%2C556&ref=nb_sb_noss_2" target="_blank"><img src="image/movie/Think and Grow Rich.jpg" alt=""></a>
+              <div class="text">
+                  <h4>Think and Grow Rich</h4>
+                  <p>watch now</p>
+              </div>
+          </div>
+        
+      </div>
+    
+  
+</div>
+
+</div>
+<!-- end portfolio -->
+<!-- start more-->
+<div class="more">
+  <div class="container">
+  <div class="image">
+    <img src="image/Voice.jpg" alt="">
+  </div>
+  <div class="text">
+    <h1>Natural-sounding human voices</h1>
+    <p>Our reading voices sound more fluid and human-like than any other AI reader so you can understand and remember more.</p>
+    <a href="#content">try now</a>
+  </div>
+</div>
+</div>
+<!-- end more-->
+<!-- start footer -->
+  <div class="footer">
+    <div class="container">
+        
+            <img src="image/logo1.png" alt="logo">
+        <p>we are social</p>
+        <div class="icons">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="copyright">
+            &copy; 2022 <span>TikTalk</span> all right reserved
+        </div>
+    </div>
+</div>
+<!-- end footer -->
+
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+
+    <!-- Swiper JS -->
+    <script src="javascript/language.js" ></script>
+   
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/index.js" ></script>
+
+    <!-- Initialize Swiper -->
+ 
+</body>
+</html>
